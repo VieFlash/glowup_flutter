@@ -1,0 +1,31 @@
+name: glowup_tracker
+description: Ứng dụng cá nhân theo dõi tập luyện, dinh dưỡng, giấc ngủ, chăm sóc da và tóc. Dữ liệu lưu cục bộ.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  # Cần Flutter 3.22+ (Dart 3.4+)
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  # Lưu dữ liệu có cấu trúc (JSON) cục bộ
+  shared_preferences: ^2.2.0
+  # Thư mục lưu ảnh da/tóc trong máy
+  path_provider: ^2.1.0
+  # Chụp / chọn ảnh
+  image_picker: ^1.0.4
+  # Chọn file JSON để nhập, lưu file sao lưu trên desktop
+  file_picker: '>=6.1.1 <11.0.0'
+  # Chia sẻ / lưu file sao lưu trên điện thoại
+  share_plus: '>=7.2.0 <12.0.0'
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
